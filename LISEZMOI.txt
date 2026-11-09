@@ -1,0 +1,11 @@
+Montage « De la bouteille à la montagne » (Volvic / Chaîne des Puys)
+
+Ordre de fabrication (dans un dossier de travail avec work/ et dl/) :
+  python3 fetch.py         télécharge photos + vidéo libres (Wikimedia Commons) dans dl/
+  python3 music.py         compose la musique -> work/musique.wav
+  python3 build_scenes.py  rend les 14 scènes   -> work/sNN_*.mp4
+  python3 make_ass.py      sous-titres          -> work/subs.ass
+  python3 assemble.py out.mp4
+
+Les textes sont dans make_ass.py, les durées et transitions dans plan.py.
+Auteurs et licences des médias : credits.json.
